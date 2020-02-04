@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/queries.css">
+    <title>words beater</title>
+</head>
+<body>
+    <header>
+        <h1>WordBeater</h1>
+    </header>
+    
+    <div class="container">
+        <section class="the-game">
+            <p>Type The Given Word Within <span class="time-limit" id="time-limit">5</span> Seconds</p>
+            <h2 id="current-word">hello</h2>
+            <input type="text" placeholder="Start typing..." id="word-input">
+            <h4 class="message" id="message"></h4>
+            <!-- Time & Score columns-->
+            <section class="output">
+                <div class="output-block">
+                    <h3 class="output-info">Time Left: </h3>
+                    <span id="time-left">0</span>
+                </div> 
+                <div class="output-block">
+                    <h3 class="output-info">Score: </h3>
+                    <span id="score">0</span>
+                </div> 
+            </section>
+        </section>
+        <section class="instructions">
+            <h5 class="instructions-header">Instructions</h5>
+            <p>Type each word in the given amount of seconds to score. To play again, just type the current word, the score will reset</p>
+        </section>
+    </div>
+    <script src="code/code.js"></script>
+
+</body>
+</html>
