@@ -26,7 +26,7 @@ header{
     margin: 0 auto;
 }
 
-.time-limit{
+.time-display{
     color: #12d61b;
 }
 
@@ -46,6 +46,15 @@ header{
     outline: 0;
     border-radius: 6px;
     font-size: 1rem;
+}
+
+#message{
+    font-size: 0.9rem;
+    margin-bottom: 1.6rem;
+}
+
+#message:after{
+    content: "\200B";
 }
 
 .output-block{
