@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+}
+
+body{
+    background-color: #363434;
+    font-family: "Lato",monospace;
+    color: #ffffff;
+    text-align: center;
+}
+
+header{
+    background-color: #5c5757;
+    padding: 1.3rem;
+}
+
+.container{
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.time-limit{
+    color: #12d61b;
+}
+
+.the-game{
+    margin: 1.3rem auto;
+}
+
+#current-word{
+    font-size: 3.4rem;
+    padding: 0.6rem 0;
+}
+
+#word-input{
+    width:100%;
+    padding: 0.6rem;
+    margin-bottom: 0.8rem;
+    outline: 0;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.output-block{
+    margin: 0.6rem auto;
+}
+
+.output-info{
+    display: inline;
+    font-size: 1.1rem;
+}
+
+.instructions{
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 0 auto;
+    background-color: #5c5757;
+}
+
+.instructions-header{
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+}
