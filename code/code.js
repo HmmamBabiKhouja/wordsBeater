@@ -113,8 +113,10 @@ function startMatcing(){
 function match(){
     if(currentword.innerHTML === wordInput.value){
         message.innerHTML="Correct"
+        wordInput.style.border = "1.5px solid #19ff28";
         return true;
     }else{
+        wordInput.style.border = "1.5px solid #ff191d";
         message.innerHTML=""
         return false;
     }
