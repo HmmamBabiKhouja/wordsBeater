@@ -11,7 +11,18 @@
 </head>
 <body>
     <header>
-        <h1>WordBeater</h1>
+        <div class="header-block">
+            <h1 class="logo">WordBeater</h1>
+            <!-- there is no need for name of now -->
+            <div class="selection-block">
+                <label for="levels">Level : </label>
+                <select id="levels" onchange="changeLevel()">
+                    <option value="7">Easy</option>
+                    <option value="5" selected>Meduim</option>
+                    <option value="3">Hard</option>
+                </select>
+            </div>
+        </div>
     </header>
     
     <div class="container">

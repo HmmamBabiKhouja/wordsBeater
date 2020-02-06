@@ -1,16 +1,5 @@
 window.addEventListener("load",init);
 
-const levels={"hard":3, "medium":5, "easy":7}
-
-const currentLevel = levels.hard;
-console.log(currentLevel)
-//Globals
-let time =currentLevel;
-let score=0;
-let isplaying;
-
-//time limit based on level 
-
 // DOM variables
 const currentword=document.querySelector("#current-word");
 const message=document.querySelector("#message");
@@ -18,6 +7,17 @@ const wordInput=document.querySelector("#word-input");
 const timeDisplay=document.querySelector("#time-display");
 const scoreDisplay = document.querySelector("#score");
 const seconds=document.querySelector("#seconds");
+const levels=document.querySelector("#levels");
+
+
+//time limit is based on level
+let currentLevel = Number(levels.value);
+
+//Globals
+let time = currentLevel;
+let score = 0;
+let isplaying;
+
 
 const words = [
     "hat",
@@ -72,6 +72,8 @@ const words = [
 ];
 
 function init(){
+    //displays the time limit
+    timeDisplay.innerHTML=currentLevel;
     // pick & display
     pickWord(words);
     //time decrement
@@ -80,6 +82,16 @@ function init(){
     setInterval(checkStatues, 50);
     //when the user pass a correct input
     wordInput.addEventListener("input",startMatcing);
+    //changes the level
+    // levels.addEventListener("input",changeLevel)    
+
+}
+
+function changeLevel(){
+    currentLevel=Number(levels.value);
+    timeDisplay.innerHTML=currentLevel;
+    wordInput.focus();
+    resetTime();
 }
 
 function startMatcing(){
@@ -111,6 +123,12 @@ function match(){
 function pickWord(words){
     let randomIndex=Math.floor(Math.random()*words.length);
     currentword.innerHTML=words[randomIndex]
+    wordInput.focus();
+}
+
+function resetTime(){
+    time=currentLevel;
+    seconds.innerHTML=time;
 }
 
 function recudeTime(){
