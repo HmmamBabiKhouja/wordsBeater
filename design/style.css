@@ -27,15 +27,22 @@ header{
     margin:0 auto ;
 }
 
-.selection-block{
+.nav-block{
     margin: auto 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 #level{
     border-radius: 6px;
 }
 
-
+.link,
+.link:visited{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
 .container{
     width: 80%;
     max-width: 600px;
