@@ -2997,6 +2997,7 @@ const words = [
 "youth",
 "zone",
 ];
+
 // DOM variables
 const currentword=document.querySelector("#current-word");
 const message=document.querySelector("#message");
@@ -3013,10 +3014,9 @@ let currentLevel = Number(levels.value);
 //Globals
 let time = currentLevel;
 let score = 0;
+let scoreProgress=currentLevel===3? 10:
+                    currentLevel===5? 7:3
 let isplaying;
-
-
-
 
 function init(){
     //displays the time limit
@@ -3039,6 +3039,7 @@ function changeLevel(){
     timeDisplay.innerHTML=currentLevel;
     wordInput.focus();
     resetTime();
+    score=0;
 }
 
 function startMatcing(){
@@ -3047,7 +3048,7 @@ function startMatcing(){
         time=currentLevel+1;
         pickWord(words);
         wordInput.value='';
-        score++;
+        score+=scoreProgress;
     }
 
     if(score===-1){
