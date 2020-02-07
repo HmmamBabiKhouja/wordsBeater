@@ -3059,7 +3059,7 @@ function startMatcing(){
 }
 
 function match(){
-    if(currentword.innerHTML === wordInput.value.ignoreCase){
+    if(currentword.innerHTML === wordInput.value.toLowerCase()){
         message.innerHTML="Correct"
         wordInput.style.border = "1.5px solid #19ff28";
         return true;
