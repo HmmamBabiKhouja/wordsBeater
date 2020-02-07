@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="design/style.css">
     <link rel="stylesheet" href="design/queries.css">
     <title>words beater</title>
@@ -15,11 +15,11 @@
             <h1 class="logo">WordBeater</h1>
             <!-- there is no need for name of now -->
             <div class="selection-block">
-                <label for="levels">Level : </label>
+                <label for="levels">المستوى : </label>
                 <select id="levels" onchange="changeLevel()">
-                    <option value="7">Easy</option>
-                    <option value="5" selected>Meduim</option>
-                    <option value="3">Hard</option>
+                    <option value="8">سهل</option>
+                    <option value="6" selected>متوسط</option>
+                    <option value="4">صعب</option>
                 </select>
             </div>
         </div>
@@ -27,25 +27,25 @@
     
     <div class="container">
         <section class="the-game">
-            <p>Type The Given Word Within <span class="time-display" id="time-display">5</span> Seconds</p>
-            <h2 id="current-word">hello</h2>
+            <p>ادخل الكلمةفي الاسفل قبل انتهاء الوقت <span class="time-display" id="time-display">5</span> ثواني</p>
+            <h2 id="current-word">مرحبا</h2>
             <input type="text" placeholder="Start typing..." id="word-input">
             <h4 id="message">&nbsp;</h4>
             <!-- Time & Score columns-->
             <section class="output">
                 <div class="output-block">
-                    <h3 class="output-info">Time Left: </h3>
+                    <h3 class="output-info">الوقت المتبقي: </h3>
                     <span id="seconds">0</span>
                 </div> 
                 <div class="output-block">
-                    <h3 class="output-info">Score: </h3>
+                    <h3 class="output-info">النتيجة: </h3>
                     <span id="score">0</span>
                 </div> 
             </section>
         </section>
         <section class="instructions">
-            <h5 class="instructions-header">Instructions</h5>
-            <p>Type each word in the given amount of seconds to score. To play again, just type the current word, the score will reset</p>
+            <h5 class="instructions-header">ارشادات</h5>
+            <p>ادخل الكلمة المطلوبة قبل انتهاء الوقت لاحراز الاهداف ومضاعفة النتيجة,عند الخسارة ادخل الكلمة المطلوبة للعب مرة اخرى</p>
         </section>
     </div>
     <script src="code/code.js"></script>
