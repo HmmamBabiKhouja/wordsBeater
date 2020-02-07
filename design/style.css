@@ -28,14 +28,14 @@ header{
 }
 
 .logo{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .nav-block{
     margin: auto 0;
     display: flex;
     justify-content: space-between;
-    width: 40vw;
+    width: 45vw;
 }
 
 .eng-ver {
