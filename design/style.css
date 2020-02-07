@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 20px;
+    font-size: 17px;
 }
 
 body{
@@ -17,24 +17,38 @@ body{
 
 header{
     background-color: #5c5757;
-    padding: 1.6rem;
+    padding: 1.6rem 0.2rem;
 }
 
 .header-block{
     display: flex;
     justify-content: space-between;
-    width:90vw;
+    width:95vw;
     margin:0 auto ;
 }
 
-.selection-block{
+.nav-block{
     margin: auto 0;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ar-ver{
+    margin: auto 0;
+    font-size: 1rem;
+}
+
+.link,
+.link:visited{
+    color:#ffffff;
+    list-style: none;   
+    text-decoration: none;
 }
 
 #level{
     border-radius: 6px;
 }
-
 
 .container{
     width: 80%;
@@ -58,7 +72,7 @@ header{
 #word-input{
     width:100%;
     padding: 0.6rem;
-    margin-bottom: 0.8rem;
+    margin: 1rem auto;
     outline: 0;
     border-radius: 6px;
     font-size: 1rem;
